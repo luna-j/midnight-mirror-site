@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="api-base" content="https://midnight-mirror.lunafmg112.chatgpt.site">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#29232e">
+  <meta name="description" content="午夜之镜：抽取一组牌，映照此刻，或让故事开始。">
+  <title>Midnight Mirror · 午夜之镜</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <button class="brand" id="home" aria-label="返回午夜之镜首页"><span class="brand-mark">⚜</span><span><span class="brand-word">MIDNIGHT MIRROR</span><small class="brand-zh">午夜之镜</small></span></button>
+    <div class="event-name"><span>✦</span> <span class="event-word">Moonlight Ball</span> <span>✦</span></div>
+    <div class="header-actions"><button class="quiet" id="design">文字与排版</button><button class="quiet about-button" id="about">关于牌与镜</button></div>
+  </header>
+  <main id="app" aria-busy="true"><div class="boot">✦<p>正在备妥牌组</p></div></main>
+  <footer class="site-footer"><span>THE CARDS DON'T DECIDE. THEY REFLECT.</span><span>牌不替你决定，只映照你尚未看清的事。</span></footer>
+  <div class="live sr-only" role="status" aria-live="polite" id="announcement"></div>
+  <div class="toast" id="toast" role="status"></div>
+  <dialog id="modal"><button class="modal-close quiet" aria-label="关闭">×</button><div id="modal-content"></div></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
